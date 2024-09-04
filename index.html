@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment Tracker</h1>
+
+        <form action="assignment_tracker.php" method="POST">
+            <input type="text" name="title" placeholder="Assignment Title" required>
+            <textarea name="description" placeholder="Assignment Description" required></textarea>
+            <input type="date" name="due_date" required>
+            <button type="submit">Add Assignment</button>
+        </form>
+        
+            
+        
+
+        <h2>Pending Assignments</h2>
+        <ul id="pendingAssignments"></ul>
+
+        <h2>Completed Assignments</h2>
+        <ul id="completedAssignments"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
